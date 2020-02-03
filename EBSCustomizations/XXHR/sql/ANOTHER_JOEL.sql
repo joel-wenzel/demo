@@ -1,1 +1,1 @@
-select sysdate from dual;
+this is a change for blog 13
