@@ -31,10 +31,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://devoic-flexagonoraclecloud-px.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/flows/rest/PENDING_FLEXDEPLOY_APPROVALS/1.0/flexdeploy/approvals",
+					"raw": "https://${{OIC:FD_OIC_INSTANCE_NAME}}-flexagonoraclecloud-px.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/flows/rest/PENDING_FLEXDEPLOY_APPROVALS/1.0/flexdeploy/approvals",
 					"protocol": "https",
 					"host": [
-						"devoic-flexagonoraclecloud-px",
+						"${{OIC:FD_OIC_INSTANCE_NAME}}-flexagonoraclecloud-px",
 						"integration",
 						"ocp",
 						"oraclecloud",
@@ -63,7 +63,7 @@
 		"basic": [
 			{
 				"key": "password",
-				"value": "ZVzLQxE7CmGNxrC",
+				"value": "${{OIC:FD_OIC_POSTMAN_PASSWORD}}",
 				"type": "string"
 			},
 			{
