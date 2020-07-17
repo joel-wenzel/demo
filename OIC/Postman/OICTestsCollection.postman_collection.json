@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "5e311834-1b75-4802-acfa-4d30d5ab7278",
+		"name": "OICTestsCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FDApprovals",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cd88d9b5-081f-437a-954c-863fa6f8ca48",
+						"exec": [
+							"pm.test(\"Status code is 202\", function () {\r",
+							"    pm.response.to.have.status(202);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-HTTP-Method-Override",
+						"type": "text",
+						"value": "PATCH"
+					}
+				],
+				"url": {
+					"raw": "https://devoic-flexagonoraclecloud-px.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/flows/rest/PENDING_FLEXDEPLOY_APPROVALS/1.0/flexdeploy/approvals",
+					"protocol": "https",
+					"host": [
+						"devoic-flexagonoraclecloud-px",
+						"integration",
+						"ocp",
+						"oraclecloud",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"ic",
+						"api",
+						"integration",
+						"v1",
+						"flows",
+						"rest",
+						"PENDING_FLEXDEPLOY_APPROVALS",
+						"1.0",
+						"flexdeploy",
+						"approvals"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "ZVzLQxE7CmGNxrC",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "joel.wenzel@flexagon.com",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5f237a20-fb31-4cd0-8f74-43dfae4a7db5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e50ff147-b8ab-49f7-865d-b0a9ae9685a2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
