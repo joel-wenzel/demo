@@ -1,0 +1,30 @@
+<adapter-config xsdTargetNamespace="http://xmlns.oracle.com/cloud/adapter/REST/PendingApprovals_REQUEST/types" name="PendingApprovals_REQUESTPortType" adapter="rest" wsdlLocation="PendingApprovals_REQUEST.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  <connection-factory location="cloud/CloudAdapter">
+    <non-managed-connection managedConnectionFactoryClassName="oracle.cloud.connector.rest.RestAdapterConnectionFactory">
+      <property name="securityPolicy" value="BASIC_AUTH"/>
+      <property name="cloud.adapter.sdk.version" value="19.4.3"/>
+      <property name="cloud.adapter.plugin.version" value="19.4.3"/>
+    </non-managed-connection>
+  </connection-factory>
+  <endpoint-activation portType="PendingApprovals_REQUESTPortType" operation="execute">
+    <activation-spec className="oracle.tip.adapter.cloud.CloudActivationSpec">
+      <property name="targetOperation" value="execute"/>
+      <property name="operationPath" value="http://xmlns.oracle.com/cloud/adapter/REST/PendingApprovals_REQUEST/execute"/>
+      <property name="operations" value="default"/>
+      <property name="integrationSchemaNamespace" value="http://xmlns.oracle.com/cloud/adapter/REST/PendingApprovals_REQUEST/types"/>
+      <property name="ResourceURI" value="/flexdeploy/approvals"/>
+      <property name="generatePartnerLink" value="false"/>
+      <property name="HttpVerb" value="POST"/>
+      <property name="activationSpecClass" value="oracle.tip.adapter.cloud.CloudActivationSpec"/>
+      <property name="invocationStyle" value="NOTIFICATION"/>
+      <property name="postQueryParamsAsContent" value="false"/>
+      <property name="copyFaultFromModel" value="true"/>
+      <property name="integrationWSDLNamespace" value="http://xmlns.oracle.com/cloud/adapter/REST/PendingApprovals_REQUEST"/>
+      <property name="forceWsdlTypesBuild" value="true"/>
+      <property name="allowChangeDefaultNamespace" value="false"/>
+      <property name="targetOperation" value="execute"/>
+      <property name="operationPath" value="http://xmlns.oracle.com/cloud/adapter/REST/PendingApprovals_REQUEST/execute"/>
+      <property name="HTTPHeadersAdded" value="true"/>
+    </activation-spec>
+  </endpoint-activation>
+</adapter-config>

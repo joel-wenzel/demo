@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oracle-xsl-webmapper:StateInfo xmlns:oracle-xsl-webmapper="http://www.oracle.com/xsl/webmapper/state" version="1.1">
+   <oracle-xsl-webmapper:ErrorsCount>0</oracle-xsl-webmapper:ErrorsCount>
+   <oracle-xsl-webmapper:WarningsCount>0</oracle-xsl-webmapper:WarningsCount>
+   <oracle-xsl-webmapper:IsImported>false</oracle-xsl-webmapper:IsImported>
+   <oracle-xsl-webmapper:HasMappings>true</oracle-xsl-webmapper:HasMappings>
+   <oracle-xsl-webmapper:StateInfoIsStale>false</oracle-xsl-webmapper:StateInfoIsStale>
+   <oracle-xsl-webmapper:SourcesReferenced>
+      <element xmlns:ns0="http://xmlns.oracle.com/cloud/adapter/REST/GetApprovals_REQUEST/types">ns0:executeResponse</element>
+      <rpcStyle>false</rpcStyle>
+      <type>2</type>
+      <uriAbsoluteLocation>file:/u01/data/domains/oic/servers/oic_server1/storage/ics/tmp/WC/itg_5874192381115617098/resources/application_30/inbound_31/resourcegroup_32/GetApprovals_REQUEST.wsdl</uriAbsoluteLocation>
+      <param>GetApprovals</param>
+      <primary>false</primary>
+   </oracle-xsl-webmapper:SourcesReferenced>
+   <oracle-xsl-webmapper:SourcesReferenced>
+      <element xmlns:ns1="http://www.oracle.com/2014/03/ic/integration/metadata">ns1:metadata</element>
+      <rpcStyle>false</rpcStyle>
+      <type>1</type>
+      <uriAbsoluteLocation>file:/u01/data/domains/oic/servers/oic_server1/storage/ics/tmp/WC/itg_5874192381115617098/resources/processor_77/resourcegroup_78/ICSIntegrationMetadata.xsd</uriAbsoluteLocation>
+      <param>self</param>
+      <primary>false</primary>
+   </oracle-xsl-webmapper:SourcesReferenced>
+   <oracle-xsl-webmapper:AllSources>
+      <element xmlns:ns2="http://xmlns.oracle.com/cloud/adapter/REST/PendingApprovals_REQUEST/types">ns2:execute</element>
+      <rpcStyle>false</rpcStyle>
+      <type>2</type>
+      <uriAbsoluteLocation>file:/u01/data/domains/oic/servers/oic_server1/storage/ics/tmp/WC/itg_5874192381115617098/resources/application_18/outbound_19/resourcegroup_20/PendingApprovals_REQUEST.wsdl</uriAbsoluteLocation>
+      <primary>true</primary>
+   </oracle-xsl-webmapper:AllSources>
+   <oracle-xsl-webmapper:AllSources>
+      <element xmlns:ns3="http://xmlns.oracle.com/cloud/adapter/REST/GetApprovals_REQUEST/types">ns3:executeResponse</element>
+      <rpcStyle>false</rpcStyle>
+      <type>2</type>
+      <uriAbsoluteLocation>file:/u01/data/domains/oic/servers/oic_server1/storage/ics/tmp/WC/itg_5874192381115617098/resources/application_30/inbound_31/resourcegroup_32/GetApprovals_REQUEST.wsdl</uriAbsoluteLocation>
+      <param>GetApprovals</param>
+      <primary>false</primary>
+   </oracle-xsl-webmapper:AllSources>
+   <oracle-xsl-webmapper:AllSources>
+      <element xmlns:ns4="http://www.oracle.com/2014/03/ic/integration/metadata">ns4:metadata</element>
+      <rpcStyle>false</rpcStyle>
+      <type>1</type>
+      <uriAbsoluteLocation>file:/u01/data/domains/oic/servers/oic_server1/storage/ics/tmp/WC/itg_5874192381115617098/resources/processor_77/resourcegroup_78/ICSIntegrationMetadata.xsd</uriAbsoluteLocation>
+      <param>self</param>
+      <primary>false</primary>
+   </oracle-xsl-webmapper:AllSources>
+   <oracle-xsl-webmapper:LookupTablesReferenced>tenant/resources/dvms/SlackChannels</oracle-xsl-webmapper:LookupTablesReferenced>
+</oracle-xsl-webmapper:StateInfo>

@@ -1,0 +1,37 @@
+<adapter-config xsdTargetNamespace="http://xmlns.oracle.com/cloud/adapter/REST/PostMessage_REQUEST/types" name="PostMessage_REQUESTPortType" adapter="rest" wsdlLocation="PostMessage_REQUEST.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  <connection-factory location="cloud/CloudAdapter">
+    <non-managed-connection managedConnectionFactoryClassName="oracle.cloud.connector.rest.RestAdapterConnectionFactory">
+      <property name="securityPolicy" value="CUSTOM_SINGLE_TOKEN"/>
+      <property name="cloud.adapter.sdk.version" value="19.4.3"/>
+      <property name="csfkey" value="2cfe0127b72cebdb976f754268702f3e04b9acb39d1cff2c76e0e171f34801b0"/>
+      <property name="csfMap" value="oracle.cloud.adapter"/>
+      <property name="cloud.adapter.plugin.version" value="19.4.3"/>
+      <property name="connectionUrl" value="%%SLACK_connectionUrl"/>
+    </non-managed-connection>
+  </connection-factory>
+  <endpoint-interaction portType="PostMessage_REQUESTPortType" operation="execute">
+    <interaction-spec className="oracle.tip.adapter.cloud.CloudInteractionSpec">
+      <property name="targetOperation" value="execute"/>
+      <property name="operationPath" value="http://xmlns.oracle.com/cloud/adapter/REST/PostMessage_REQUEST/execute"/>
+      <property name="allowChangeDefaultNamespace" value="false"/>
+      <property name="HTTPHeadersAdded" value="true"/>
+      <property name="HttpVerb" value="POST"/>
+      <property name="RequestMediaType" value="application/json"/>
+      <property name="enforceResponseSizeRestriction" value="true"/>
+      <property name="integrationWSDLNamespace" value="http://xmlns.oracle.com/cloud/adapter/REST/PostMessage_REQUEST"/>
+      <property name="generateConnectivityPropertiesOutboundRequest" value="RESTOUTREQ"/>
+      <property name="isRequestRawBytes" value="false"/>
+      <property name="copyFaultFromModel" value="true"/>
+      <property name="requestJsonTopLevelArray" value="false"/>
+      <property name="RequestElementName" value="request-wrapper"/>
+      <property name="generatePartnerLink" value="false"/>
+      <property name="RequestSample" value="{   &quot;attachments&quot;: [{     &quot;color&quot;: &quot;#93272C&quot;,     &quot;fields&quot;: [       {         &quot;short&quot;: true,         &quot;title&quot;: &quot;project&quot;,         &quot;value&quot;: &quot;abc&quot;       },       {         &quot;short&quot;: true,         &quot;title&quot;: &quot;project&quot;,         &quot;value&quot;: &quot;n/a&quot;       },       {         &quot;short&quot;: false,         &quot;title&quot;: &quot;longer key&quot;,         &quot;value&quot;: &quot;231231231231&quot;       },       {         &quot;short&quot;: false,         &quot;title&quot;: &quot;longer key&quot;,         &quot;value&quot;: &quot;231231231231&quot;       }     ]   }],   &quot;blocks&quot;: [     {       &quot;text&quot;: {         &quot;text&quot;: &quot;:wrench:  something&quot;,         &quot;type&quot;: &quot;mrkdwn&quot;       },       &quot;type&quot;: &quot;section&quot;     },     {&quot;type&quot;: &quot;divider&quot;},     {       &quot;type&quot;: &quot;actions&quot;,       &quot;elements&quot;: [         {           &quot;action_id&quot;: &quot;doesnt matter&quot;,           &quot;text&quot;: {             &quot;text&quot;: &quot;Confirm&quot;,             &quot;emoji&quot;: false,             &quot;type&quot;: &quot;plain_text&quot;           },           &quot;value&quot;: &quot;123&quot;,           &quot;type&quot;: &quot;button&quot;         },         {           &quot;action_id&quot;: &quot;abc&quot;,           &quot;text&quot;: {             &quot;text&quot;: &quot;Cancel&quot;,             &quot;emoji&quot;: false,             &quot;type&quot;: &quot;plain_text&quot;           },           &quot;value&quot;: &quot;12&quot;,           &quot;type&quot;: &quot;button&quot;         }       ]     }   ],   &quot;channel&quot;: &quot;testing&quot; } "/>
+      <property name="invocationStyle" value="REQUEST_RESPONSE"/>
+      <property name="postQueryParamsAsContent" value="false"/>
+      <property name="RequestElementNS" value="http://xmlns.oracle.com/cloud/adapter/REST/PostMessage/types"/>
+      <property name="connectionType" value="restapi"/>
+      <property name="integrationSchemaNamespace" value="http://xmlns.oracle.com/cloud/adapter/REST/PostMessage_REQUEST/types"/>
+      <property name="ResourceURI" value="/chat.postMessage"/>
+    </interaction-spec>
+  </endpoint-interaction>
+</adapter-config>
