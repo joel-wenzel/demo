@@ -7,7 +7,7 @@
     <ns1:percentComplete>100</ns1:percentComplete>
     <ns1:projectHasErrors>false</ns1:projectHasErrors>
     <ns1:projectHasWarnings>false</ns1:projectHasWarnings>
-    <ns0:icsflow name="flow_1"><!--comment-->
+    <ns0:icsflow name="flow_1">
         <application name="application_18">
             <role>source</role>
             <adapter>
