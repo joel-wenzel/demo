@@ -2,8 +2,8 @@
       // Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
       // Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
       variable "tenancy_ocid" {}
-      variable "region" {}
-      variable "compartment_ocid" {}
+      variable "compartment_ocid" {default="ocid1.compartment.oc1..aaaaaaaaose23kfto7ito35t7mkowbjxgeqxshssjk4gejgfydqygbgfacja"}
+      variable "region" {default="us-ashburn-1"}
 
       variable "autonomous_database_db_workload" {
         default = "OLTP"
