@@ -3,6 +3,5 @@ variable "region" {default="us-ashburn-1"}
 variable "tenancy_ocid" {}
 
 provider "oci" {
-  version              = ">= 3.14"
   region               = "${var.region}"
 }
