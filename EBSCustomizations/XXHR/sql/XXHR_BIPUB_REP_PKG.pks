@@ -1,6 +1,6 @@
 CREATE OR REPLACE PACKAGE xxhr_bipub_rep_pkg AS
 -----------------------------------------------------------------------------------------------------          
--- a new comment again
+--
 --
 --            NAME:   XXHR_BIPUB_REP_PKG
 --            TYPE:   Package Specification
