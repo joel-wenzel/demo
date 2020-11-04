@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ns0:icsproject xmlns="http://www.oracle.com/2014/03/ics/flow/definition" xmlns:ns0="http://www.oracle.com/2014/03/ics/project" xmlns:ns1="http://www.oracle.com/2014/03/ics/project/definition" name="project_1" version="8.0" cversion="5" modelType="freeform">
-    <!--a comment-->
+    
     <ns1:projectCode>PENDING_FLEXDEPLOY_APPROVALS</ns1:projectCode>
     <ns1:projectVersion>01.00.0000</ns1:projectVersion>
     <ns1:projectName>Pending FlexDeploy Approvals</ns1:projectName>
