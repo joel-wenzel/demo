@@ -356,3 +356,4 @@ public class xxPersonDetailsEOImpl extends OAEntityImpl
   }
 }
 // added comment
+//added comment
