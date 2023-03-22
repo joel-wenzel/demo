@@ -4,3 +4,4 @@ added line 3
 adeed line 4
 added line 5
 added line 6
+added line 7
