@@ -14,3 +14,4 @@ grant all privileges on HR.JOBS to HRDEMO;
 grant all privileges on HR.LOCATIONS to HRDEMO;
 grant all privileges on HR.REGIONS to HRDEMO;
 --comment
+--noew comment
