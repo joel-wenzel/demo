@@ -39,4 +39,4 @@ public class HRUIAMImpl
     return (DepartmentsDefaultVOImpl) findViewObject("Departments");
   }
 }
-
+//End of code
