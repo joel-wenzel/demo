@@ -355,3 +355,4 @@ public class xxPersonDetailsEOImpl extends OAEntityImpl
     setPersonId(getOADBTransaction().getSequenceValue("PER_PEOPLE_S"));
   }
 }
+//END of code
