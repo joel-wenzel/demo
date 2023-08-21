@@ -14,3 +14,4 @@ public class xxPersonDetailsVOImpl extends OAViewObjectImpl
   {
   }
 }
+//line added for POLL SCM trigger
