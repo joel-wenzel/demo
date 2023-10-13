@@ -357,3 +357,4 @@ public class xxPersonDetailsEOImpl extends OAEntityImpl
 }
 //END of code
 //END of code1
+//End
