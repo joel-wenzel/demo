@@ -1,4 +1,5 @@
 # Comment
+# Comment
 # $Header$
 # dbdrv: exec fnd bin FNDLOAD bin &phase=daa+56 checkfile:~PROD:~PATH:~FILE &ui_apps 0 Y UPLOAD @FND:patch/115/import/afcpprog.lct @~PROD:~PATH/~FILE
 LANGUAGE = "US"
