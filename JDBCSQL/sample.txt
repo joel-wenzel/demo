@@ -11,3 +11,4 @@ hi welcome to test
 HMAC test 83
 test hmac with FLX_PRISTINE_PAYLOAD
 test hmac with FLX_PRISTINE_PAYLOAD
+test hmac with PAYLOAD
