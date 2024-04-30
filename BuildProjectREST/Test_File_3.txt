@@ -1,9 +1,10 @@
 Keith
 added line 2
-added line 3
-adeed line 4
-added line 5
-added line 6
-added line 7
 added line 8
-added line 8
+we have a below method in EnvironmentInstancePropertyAPI
+
+public List<PropertyKeyDataObject> patchEnvironmentInstanceProperties(Long pEnvironmentInstanceId, List<PropertyKeyDataObject> pPropertiesToUpdate)
+
+Steps -
+
+create an object of EnvironmentInstancePropertyAPI and call patchEnvironmentInstanceProperties(Long pEnvironmentInstanceId, List<PropertyKeyDataObject> pPropertiesToUpdate)
