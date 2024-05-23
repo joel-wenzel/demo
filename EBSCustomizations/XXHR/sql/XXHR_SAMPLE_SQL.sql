@@ -5,6 +5,8 @@ END;
 --comment
 --comment
 /* add commentsingle line */
-SELECT * FROM DUAL;
---date
-/* finish or end of sql */
+/* I would like to
+display a system date 
+along with this execution */
+SELECT SYSDATE AS current_date FROM dual;
+/* End of this file */
