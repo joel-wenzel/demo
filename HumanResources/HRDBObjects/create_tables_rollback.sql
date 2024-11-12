@@ -1,2 +1,2 @@
-drop table HRDEMO.departments;
 drop table HRDEMO.employees;
+drop table HRDEMO.departments;
